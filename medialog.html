@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I LOVE TV!</title>
+    <link rel="stylesheet" href="style-medialog.css">
+    <script src="script-medialog.js" defer></script>
+    <meta name="robots" content="noai, noimageai">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- PAGE ICON -->
+
+    <!---STYLE NOTES 
+
+  MAIN FONT: sour-gummy-regular ["Sour Gummy", Georgia, Times, Times New Roman, serif;]
+  HEADINGS FONT: [shuck-regular, Georgia, Times, Times New Roman, serif;]
+  off-white : #eae7d4
+  off-black: #222342
+  red: #7c0000
+  hover-red: #d03439
+  yellow: #f2d778
+  tv-grey: #d8a3c5
+  
+    -->
+</head>
+
+<body>
+    <div class="bg-overlay"> </div>
+    <div class="bg-overlay2"> </div>
+
+    <!-- MEDIA LOG HEADER -->
+    <div id="medialog-header" class="flex">
+        <main class="header">
+            <div class="big flex">
+                <div class="header flex" id="container-title-intro">
+                    <div class="header icon" id="container-title"> <img class="icon" src="images/medialogicon.png">
+                        <h1>2025</h1>
+                        <h2>Media Log</h2>
+                    </div>
+                    <div class="intro">
+                        <div class="header-tvtime">
+                        </div>
+                        <!-- CENTERING USING GRID -->
+                        <div class="centre">
+                            <article class="intro-description">
+                                <p class="sour-gummy-regular"> 'Media' is such an ambiguous term, but this page is to
+                                    log
+                                    and review TV series, films, games and any other things I read or watch
+                                </p>
+                                <p class="sour-gummy-regular">
+                                    <i>Page theme is heavily inspired by TV World, 'cus i just <img id="medialog-love"
+                                            src="images/Tenna_funnytext_love.png" alt="LOVE"> TV !</i>
+                                </p>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- FAVOURITES GALLERY-->
+
+    <div class="centre">
+        <h2 class="sour-gummy-regular" id="favourites-heading">FAVOURITES</h2>
+    </div>
+
+    <div class="favourites-container">
+
+        <!-- IMAGE 1 -->
+        <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-sa2.jpg);"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Sonic Adventure 2 (2001)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 2 -->
+        <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-madoka.jpg);"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Madoka Magica: The Rebellion Story (2013)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 3 -->
+       <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-americanpsycho.jpg);"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>American Psycho (2000)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 4 -->
+           <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-utena.jpg);"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Revolutionary Girl Utena (1997)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 5 -->
+        <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-columbo.jpg);"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Columbo (1968-2003)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 6 -->
+        <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-shuck.jpg);"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Shuck (2023)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 7 -->
+         <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-moomins.jpg);"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>The Moomins (1978-1982)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 8 -->
+             <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-hmc.jpg)"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Howl's Moving Castle (2004)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 9 -->
+           <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-tma.png)"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>The Magnus Archives (2016 - 2021)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 10 -->
+        <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-wtnv.jpg)"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Welcome to Night Vale (2012~)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 11 -->
+        <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-dtr.jpg)"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Deltarune (2018~)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE 12 -->
+          <div id="outer-frame" class="gallery-img-wrapper">
+            <div id="favourites-image" style="background-image: url(images/medialog-gallery/poster-kikis.jpg)"></div>
+
+            <!-- CAPTION  -->
+            <div class="favourites-caption">
+                <a class="caption-button" onclick='openCaption()'>
+                    <b>Kiki's Delivery Service (1989)</b>
+                </a>
+            </div>
+            <div class="inner">
+                <div class="caption-collapse">
+                    <p>Image Caption</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEDIA LOG FOOTER -->
+    <!---FOOTER-->
+    <div class="footer-container">
+        <footer class="footer--index">
+
+            <p>hand-coded with love &nbsp;<img src="images/shuck-likes-this-thing-on-the-left.gif">&nbsp;
+                &nbsp;&nbsp;&nbsp; <br class="mobile-break"> <span class="sour-gummy-regular"><b>©</b></span>
+                waywardshuck
+                2025 ~ &nbsp; All Rights
+                Reserved.</p>
+            <p class="sour-gummy-regular">any art & 2D assets are my own unless
+                <a href="https://neocities.org/"><b>otherwise noted</b></a>,
+                and are not for free use.
+            </p>
+
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+To apply the cursors :
+
+Search for "MOUSE" on your PC'S Search Bar >>
+Select "MOUSE SETTINGS" >>
+Roll down until you find the "ADDITIONAL MOUSE SETTINGS" option >>
+Select the "POINTERS" option >>
+Select "BROWSE..." option and search for the cursors in the files you've downloaded them >>
+Repeat the "BROWSE..." step until you fill every cursor option to change >>
+Select "APPLY" and then "ACCEPT", and you're done!

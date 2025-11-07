@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-color: #d03439 transparent;
+    max-width: 100vw;
+}
+
+html {
+    position: relative;
+    height: 100%;
+    cursor: url('mkewk_tenna_cursor/NORMAL.cur'), auto;
+    background-image: url(images/backgrounds/green-room.gif);
+    background-position: 1920px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    image-rendering: pixelated;
+
+}
+
+
+body {
+    line-height: 1.4em;
+}
+
+/* BACKGROUND STYLING */
+
+.bg-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url(images/backgrounds/green-room-overlay.png);
+    background-position: 1920px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* SLIDE ANIMATION*/
+    animation: background-slide 50s linear infinite;
+    /*BLENDING MODE/FILTER*/
+    animation-play-state: running;
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.bg-overlay2 {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url(images/backgrounds/green-room-overlay.png);
+    background-position: 1920px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* SLIDE ANIMATION*/
+    animation: background-slide 50s linear infinite;
+    animation-play-state: running;
+    /*BLENDING MODE/FILTER*/
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+@keyframes background-slide {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1920px 0;
+    }
+}
+
+/* BODY */
+@font-face {
+    font-family: shuck-regular;
+    src: url(Shuck-Regular.ttf);
+}
+
+h1 {
+    font-family: "shuck-regular", Georgia, Times, Times New Roman, serif;
+    font-style: normal;
+}
+
+.sour-gummy-regular {
+    font-family: "Sour Gummy", Georgia, Times, Times New Roman, serif;
+    font-style: normal, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+a {
+    cursor: url("mkewk_tenna_cursor/LINK.cur"), auto;
+    color: #7c0000;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #d03439;
+    cursor: url("mkewk_tenna_cursor/LINK.cur"), auto;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-style: dashed;
+    background-color: transparent;
+
+}
+
+
+main {
+    flex-grow: 6;
+    flex-shrink: 1;
+    flex-basis: 40%;
+    min-width: 300px;
+    max-width: 75%;
+}
+
+.flex {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.big {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+
+/* HEADER */
+
+.header {
+    justify-content: center;
+    display: block;
+    position: relative;
+    padding-top: 20px;
+    margin: 10px;
+    max-width: 1200px;
+
+}
+
+.header .flex {
+    align-items: unset;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#container-title {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 70px;
+
+}
+
+#container-title-intro {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    max-width: 326px;
+    max-height: 360px;
+    padding: 10px;
+    margin: 20px;
+    z-index: 99999;
+}
+
+
+.flex .icon {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+.header h1 {
+    display: block;
+    width: 100%;
+    max-width: 308px;
+    color: #d03439;
+    margin-top: 50px;
+    font-size: 8em;
+    text-shadow: 2px 3px #7c0000;
+}
+
+.header h2 {
+    max-width: 308px;
+    display: block;
+    width: 100%;
+    font-family: "shuck-regular", Georgia, Times, Times New Roman, serif;
+    font-size: 3em;
+    margin-top: 35px;
+    margin-left: 25px;
+    color: #d03439;
+    text-shadow: 2px 3px #7c0000;
+}
+
+.header-tvtime {
+    margin-top: -20px;
+    display: flex;
+    flex: 1;
+    height: 50%;
+    width: 100%;
+    background-image: url(images/tv-time!.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 18%;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 240px;
+}
+
+.centre {
+    display: grid;
+    place-items: center;
+}
+
+.intro-description {
+    margin-top: -20px;
+    text-align: center;
+    font-size: 1.5em;
+    background: url("/images/backgrounds/pinkdots.png");
+    background-color: #eae7d4;
+    padding: 1.2em;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+.intro p {
+    margin-top: 20px;
+}
+
+#medialog-love {
+    height: 30px;
+    margin-bottom: -10px;
+}
+
+/* FAVOURITES GALLERY */
+
+.favourites-container {
+    margin: 50px auto auto auto;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 25%;
+    z-index: 99999;
+    gap: 10px;
+    /* max-width: 1200px makes it max 6 images per row */
+    max-width: 1200px;
+
+}
+
+/* GALLERY HEADING */
+
+#favourites-heading {
+    max-width: 1200px;
+    margin: 50px 10px 0px 10px;
+    position: relative;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    font-size: 2em;
+    background-color: #d03439;
+    color: #eae7d4;
+    text-shadow: 1px 2px #7c0000;
+    font-family: "Sour Gummy", Georgia, Times, Times New Roman, serif;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 5px;
+    padding: 10px 15px;
+    /* STYLISED BORDER */
+    box-shadow:
+        0 0 0 2px #f2d778,
+        0 0 0 9px #eae7d4,
+        0 0 1px 12px #d03439,
+        0 1px 0 15px #7c0000;
+}
+
+/* GALLERY CONTENTS */
+
+.favourites-container #outerframe {
+    box-sizing: border-box;
+    width: calc(25% - 10px);
+}
+
+.favourites-container #outer-frame {
+    margin: 5px;
+    border: 2px solid #b3ab9f;
+    background-color: #dfd7c8;
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    min-height: 200px;
+    min-width: 150px;
+    max-width: 180px;
+    padding: 1px;
+}
+
+.favourites-container #favourites-image {
+    opacity: 85%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #b3ab9f;
+    min-height: 200px;
+    min-width: 150px;
+    margin: 3px;
+}
+
+
+/* FAVOURITES GALLERY - CAPTION TOGGLES */
+
+.gallery-img-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.gallery-img-wrapper.expanded {
+    grid-template: 1fr;
+}
+
+
+.favourites-caption {
+    /* box sizing, margins & border-top 0
+   makes it line up with image bottom */
+    box-sizing: border-box;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: -4px;
+    background-color: #ede5d8;
+    border: 3px solid #b3ab9f;
+    border-top: 0px;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.caption-collapse p {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* FOOTER  */
+
+.footer-container {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer--index {
+    align-items: center;
+    padding: 1em 1.5em;
+    width: min(95%, 50em);
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+    margin: 50px auto 50px auto;
+    text-align: center;
+    background: url("/images/backgrounds/pinkdots.png");
+    background-color: #eae7d4;
+    font-family: shuck-regular, Georgia, Times, Times New Roman, serif;
+}
+
+/* BREAKPOINTS */
+
+.mobile-break {
+    display: none;
+}
+
+/* break point for tablet */
+
+/* hides extra banner when textbox overflows */
+@media screen and (max-width:770px) {
+   
+    .header-tvtime {
+        display: none;
+    }
+    
+}
+
+/* centres header when textbox overflows second time */
+@media screen and (max-width:675px) {
+ 
+    .header {
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px
+    }
+
+    #container-title {
+        margin-bottom: 100px;
+    }
+
+    .header h2 {
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .intro-description {
+        margin-top: 0px;
+
+    }
+}
+
+
+
+/* break point for mobile */
+@media screen and (max-width: 500px) {
+
+    /* CENTERS HEADER ON MOBILE */
+    .header {
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .icon {
+        text-align: center;
+    }
+
+    .header h1 {
+        text-align: center;
+    }
+
+    .header h2 {
+        text-align: center;
+        margin-left: auto;
+    }
+
+    #container-title-intro {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container-title {
+        margin-bottom: 100px;
+    }
+
+    /* INTRO BREAKPOINT */
+
+    .intro {
+        margin: auto;
+    }
+
+    /* GALLERY BREAKPOINT */
+
+    #favourites-heading {
+        margin: 20px auto;
+        width: calc(100% - 40px);
+    }
+
+    .favourites-container {
+        max-width: 100%;
+    }
+
+    .favourites-container #outerframe {
+        box-sizing: border-box;
+        width: calc(50% - 10px);
+    }
+
+    /*MOBILE PARAGRAPH BREAKS*/
+    .mobile-break {
+        display: inline;
+    }
+
+}
